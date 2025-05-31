@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+
+    <style>
+        .azul{
+            color:blue
+        }
+
+        .vermelho{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Título principal</h1>
+
+    <h2 class="subtitle">Este é o segundo título</h2>
+
+    <p id="paragrafo">Este é o parágrafo</p>
+    <ul id="lista">
+        <li class="azul">Item</li>
+        <li class="vermelho">Item</li>
+        <li class="azul">Item</li>
+        <li class="vermelho">Item</li>
+        <li class="azul">Item</li>
+        <li class="vermelho">Item</li>
+    </ul>
+
+    <script src="script.js"></script>
+
+    <script>
+        let lista = document.querySelector("ul")
+        let listaElementos = document.querySelectorAll("li")
+
+        for (let elemento of listaElementos){
+            if(elemento.classList == "azul"){
+                elemento.classList.remove("azul")
+                elemento.classList.add("vermelho")
+            } else {
+                elemento.classList.remove("vermelho")
+                elemento.classList.add("azul")
+            }
+        }
+        document.getElementById('elemento')
+    </script>
+</body>
+</html>
